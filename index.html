@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Ivannofick</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1 1 300px;
+            max-width: 300px;
+            background-color: #fff;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .sidebar img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .sidebar h1 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+        }
+
+        .sidebar p {
+            margin: 5px 0;
+        }
+
+        .content {
+            flex: 3 1 600px;
+        }
+
+        .project {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .tech-stack {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #34495e;
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .skills {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px 20px;
+        }
+
+        .skills li::before {
+            content: "• ";
+            color: #2c3e50;
+        }
+
+        .skills li {
+            text-align: left;
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                margin-right: 0;
+                margin-bottom: 20px;
+                max-width: 100%;
+            }
+
+            .content {
+                max-width: 100%;
+            }
+        }
+
+        .certifications {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .certifications li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .cert-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            margin-right: 10px;
+        }
+
+        .cert-info {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar / Data Diri -->
+        <div class="sidebar">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQHH4xTaPzU1xw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1674819854595?e=1760572800&v=beta&t=VKkQt9P4pRBIn6jhFhfesRBBCeytjdo5SeAEFEaR9Fo"
+                alt="Ivannofick Ad'ha Nugraha">
+            <h2>Ivannofick Ad'ha Nugraha</h2>
+            <p>📧 ivannofick@gmail.com</p>
+            <p>📱 08989750817</p>
+            <div class="social-links" style="display: flex; gap: 10px; margin-bottom: 10px;">
+                <a href="https://linkedin.com/in/ivannofick" target="_blank">🌐 LinkedIn</a>
+                <a href="https://github.com/ivannofick" target="_blank">💻 GitHub</a>
+            </div>
+            <hr>
+            <h3>Skill</h3>
+            <ul class="skills">
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Next.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>Linux</li>
+                <li>PostgreSQL</li>
+                <li>Apache</li>
+                <li>Nginx</li>
+                <li>Laravel</li>
+                <li>MySQL</li>
+                <li>NativeScript</li>
+                <li>ReactNative</li>
+                <li>Tailwind CSS</li>
+                <li>Bootstrap</li>
+            </ul>
+            <h3>Pendidikan</h3>
+            <p>S1 Teknik Informatika, Universitas Stikubank Semarang Contoh (2016-2017)</p>
+            <h3>Lisensi & Sertifikasi</h3>
+
+            <ul class="certifications">
+                <li>
+                    <img src="https://media.licdn.com/dms/image/v2/C560BAQFBZUziVzn6KA/company-logo_200_200/company-logo_200_200/0/1630642701809?e=1760572800&v=beta&t=wO4gxfBRFZg2Dg14U1mIWdayJFz3-ZS1lYm955oy3aQ"
+                        alt="BNSP" class="cert-logo">
+                    <div class="cert-info">
+                        <strong>Sertifikat Kompetensi</strong><br>
+                        Badan Nasional Sertifikasi Profesi (BNSP)<br>
+                        Diterbitkan: Nov 2024<br>
+                        ID Kredensial: 1565359792024<br>
+                        Bidang: Data Science
+                    </div>
+                </li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft"
+                        class="cert-logo">
+                    <div class="cert-info">
+                        <strong>ASSOCIATE DATA SCIENTIST</strong><br>
+                        MTA: Database Administration Fundamentals<br>
+                        Microsoft<br>
+                        Diterbitkan: Apr 2019<br>
+                        ID Kredensial: 8B6x-uGsJ
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+        <!-- Content / Portfolio -->
+        <div class="content">
+            <h2>Portfolio Projects</h2>
+            <div id="projects-container"></div>
+        </div>
+    </div>
+
+    <script>
+        const projects = [
+            {
+                title: "TeapotApps - Framework Mini untuk Aplikasi Web Cepat",
+                description: "TeapotApps adalah framework open-source yang saya kembangkan untuk mempermudah pembuatan aplikasi web dengan struktur MVC. Framework ini dirancang untuk meningkatkan efisiensi pengembangan aplikasi dengan menyediakan struktur dasar yang jelas dan mudah diadaptasi.",
+                tech: "React.js, Node.js, Express, MongoDB",
+                github: "https://github.com/ivannofick/teapotapps",
+                demo: "https://teapotapps.github.io"
+            },
+            {
+                title: "InfoAllEvent - Platform Pencarian dan Pendaftaran Event",
+                description: "InfoAllEvent Clone adalah aplikasi web yang saya buat untuk meniru platform pencarian dan pendaftaran event. Aplikasi ini memungkinkan pengguna untuk mencari event berdasarkan kategori, lokasi, dan tanggal, serta mendaftar untuk event yang diminati.",
+                tech: "Next.js, Tailwind CSS, Node.js, Express, PostgreSQL",
+                github: "",
+                demo: "https://infoallevent.com"
+            },
+            {
+                title: "DeurSocial – Platform Media Sosial untuk Event & Networking",
+                description: "DeurSocial adalah aplikasi web dan mobile yang saya kembangkan untuk memudahkan pengguna mencari event, menemukan teman untuk pergi ke event, dan berdiskusi. Platform ini dilengkapi fitur login, filter event, daftar teman, dan integrasi chat sederhana.",
+                tech: "Next.js, React, Node.js, Express, PostgreSQL, Linux, Nginx, Websocket, Tailwind CSS",
+                github: "",
+                demo: "https://deursocial.com"
+            },
+            {
+                title: "Ladara.id - Marketplace dari Keluarga Besar TNI",
+                description: "Didirikan pada tahun 2019, Ladara Indonesia merupakan marketplace yang dikelola oleh Organisasi Dharma Pertiwi. Platform ini menghubungkan anggota keluarga besar TNI dengan masyarakat luas, menyediakan marketplace online yang efisien dan mudah digunakan.",
+                tech: "Laravel, Wordpress, Flutter, React, Node.js, VanilaJs, Mysql, Apache, Boostrap, Tailwind CSS",
+                github: "",
+                demo: "https://ladara.id"
+            },
+            {
+                title: "RCTI+ - Superapp Streaming dan Hiburan Digital",
+                description: "RCTI+ adalah aplikasi superapp yang menyediakan layanan streaming TV langsung, video on-demand, berita terkini, radio, podcast, dan audisi bakat dalam satu platform. Aplikasi ini menggabungkan berbagai layanan hiburan untuk memberikan pengalaman pengguna yang lengkap dan terintegrasi.",
+                tech: "ReactJs, Node.js, Express, Laravel, Typescript, PostgreSQL",
+                github: "",
+                demo: "https://www.rctiplus.com/"
+            },
+            {
+                title: "CRM Web System – Yamaha Motorcycle Dealer Semarang",
+                description: "Sistem CRM web yang dikembangkan untuk dealer motor Yamaha di Semarang, bertujuan untuk mempermudah manajemen pelanggan, penjualan, dan layanan purna jual. Sistem ini membantu dealer memonitor data pelanggan, histori transaksi, dan aktivitas marketing secara efisien.",
+                tech: "Laravel, Angular, NativeScript, MySQL, Linux",
+                github: "",
+                demo: ""
+            },
+            {
+                title: "RuangApp - Platform SMM Panel Indonesia",
+                description: "RuangApp adalah platform SMM Panel terkemuka di Indonesia yang menyediakan berbagai layanan media sosial dengan harga terjangkau. Platform ini menawarkan layanan otomatisasi pemasaran media sosial, pembayaran online, dan produk digital untuk membantu pengguna meningkatkan interaksi sosial media mereka.",
+                tech: "NodeJs, ReactJs, PostgreSQL, Linux",
+                github: "",
+                demo: ""
+            },
+            {
+                title: "Demikita.id - Platform Digital Media & Streaming",
+                description: "Demikita.id adalah platform digital yang menyediakan layanan streaming video dan konten media interaktif. Platform ini mendukung berbagai format video dan menyediakan sistem backend yang stabil untuk distribusi konten secara realtime.",
+                tech: "Laravel, React.js, MySQL, Apache, Linux, systemd, FFmpeg",
+                github: "",
+                demo: "https://demikita.id",
+            },
+            {
+                title: "Risk Management Website – Indosat Ooredoo Hutchison",
+                description: "Website Risk Management ini dikembangkan untuk memudahkan tim Indosat Ooredoo Hutchison dalam memonitor, mengelola, dan menganalisis risiko operasional perusahaan. Platform ini menyediakan dashboard interaktif dan laporan otomatis untuk pengambilan keputusan yang lebih cepat dan akurat.",
+                tech: "Laravel, React.js, MySQL, Linux, Apache",
+                github: "",
+                demo: ""
+            }
+        ];
+
+        const container = document.getElementById("projects-container");
+
+        projects.forEach(project => {
+            const projectDiv = document.createElement("div");
+            projectDiv.className = "project";
+
+            // cek dulu apakah github / demo ada
+            const githubHTML = project.github
+                ? `<p><strong>Link GitHub:</strong> <a href="${project.github}" target="_blank">${project.github}</a></p>`
+                : `<p><strong>Link Github:</strong> Private / Tidak tersedia</p>`;
+
+            const demoHTML = project.demo
+                ? `<p><strong>Demo:</strong> <a href="${project.demo}" target="_blank">${project.demo}</a></p>`
+                : `<p><strong>Demo:</strong> Private / Tidak tersedia</p>`;
+
+            projectDiv.innerHTML = `
+    <h3>${project.title}</h3>
+    <p>${project.description}</p>
+    <p class="tech-stack"><strong>Teknologi:</strong> ${project.tech}</p>
+    ${githubHTML}
+    ${demoHTML}
+  `;
+
+            container.appendChild(projectDiv);
+        });
+
+    </script>
+</body>
+
+</html>
